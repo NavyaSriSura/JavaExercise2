@@ -44,4 +44,9 @@ CheckEven checkEven;
         String result=checkEven.isEven(0);
         assertEquals(result,"true");
     }
+    @Test(expected=NumberFormatException.class)
+    public void testGivenNonIntegerRaiseException()
+    {
+        String result=checkEven.isEven(a);
+    }
 }
