@@ -6,7 +6,7 @@ public class PowerOfFour {
         {
             if(n == 0)
                 return false;
-            while(n != 1)
+            while(n != 1)//condition to check if number is a power of 4
             {
                 if(n % 4 != 0)
                     return false;

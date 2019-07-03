@@ -42,4 +42,9 @@ public class PalindromeTest {
      boolean result=palindrome.checkPalindrome(0);
      assertEquals(result,true);
  }
+ @Test
+    public void testGivenNegativeNumberReturnError()
+ {
+
+ }
 }

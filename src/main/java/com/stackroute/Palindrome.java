@@ -6,7 +6,7 @@ public class Palindrome {
     {
         Boolean var;
         int temp=number,sum=0,remainder;
-        while(temp>0)
+        while(temp>0)//while loop for reversing number
         {
             remainder=temp%10;
             sum=sum*10+remainder;

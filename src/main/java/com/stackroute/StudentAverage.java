@@ -5,7 +5,7 @@ public class StudentAverage
     int numberOfStudents;
    int[] grades;
    int sum=0;
-   public double calculateAverage(int grades[])
+   public double calculateAverage(int grades[]) //method for calculating average
    {
        for(int i=0;i<grades.length;i++)
        {
@@ -16,7 +16,7 @@ public class StudentAverage
    }
 
 
-    public int findMaximum(int grades[])
+    public int findMaximum(int grades[])//method for finding maximum among all elements
     {
         int max=grades[0];
         for(int i=0;i<grades.length;i++)
@@ -26,7 +26,7 @@ public class StudentAverage
         }
         return max;
     }
-    public int findMinimum(int grades[])
+    public int findMinimum(int grades[])//method for finding minimum among given elements
     {
         int max=grades[0];
         for(int i=0;i<grades.length;i++)

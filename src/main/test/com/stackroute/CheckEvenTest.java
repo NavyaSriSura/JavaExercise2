@@ -20,22 +20,28 @@ CheckEven checkEven;
         checkEven=null;
     }
     @Test
-    public void testGivenANumberShouldReturnEven()
+    public void testGivenANumberReturnEven()
     {
        String result=checkEven.isEven(24);
        assertEquals(result,"true");
     }
 
     @Test
-    public void testGivenANumberShouldReturnOdd()
+    public void testGivenANumberReturnOdd()
     {
         String  result=checkEven.isEven(25);
         assertEquals(result,"false");
     }
     @Test
-    public void testGivenANumberShouldReturnError()
+    public void testGivenANumberReturnError()
     {
         String result=checkEven.isEven(-5);
         assertEquals(result,"Enter valid number");
+    }
+    @Test
+    public void testGivenZeroReturnEven()
+    {
+        String result=checkEven.isEven(0);
+        assertEquals(result,"true");
     }
 }

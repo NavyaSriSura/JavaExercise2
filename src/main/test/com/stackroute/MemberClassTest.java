@@ -40,4 +40,5 @@ public void testSholdReturnAge()
         int result=memberClass.setSalary();
         assertEquals(result,700000);
     }
+
 }
